@@ -44,8 +44,9 @@ class Presents extends React.Component {
       console.log(data);
     }).catch(error=>console.log(error))
   }
-  getPerson(present){
+  getPresent(present){
     this.setState({present: present})
+
   }
   toggleState(st1, st2){
     this.setState(
@@ -57,7 +58,7 @@ class Presents extends React.Component {
   }
   handleCreate(present){
     console.log([present, ...this.state.present])
-    this.setState({presents: [present, ...this.state.people]})
+    this.setState({presents: [present, ...this.state.presents]})
   }
   handleCreateSubmit(present){
     fetch('/presents', {
@@ -117,7 +118,7 @@ class Presents extends React.Component {
           : ''
         }
         {
-          this.state.presentListIsVisible ?
+          this.state.presentIsVisible ?
           <Present
             toggleState={this.toggleState}
             present={this.state.present}
