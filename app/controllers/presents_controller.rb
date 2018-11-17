@@ -12,7 +12,7 @@ class PresentsController < ApplicationController
   end
 
   # create one
-  def createOne
+  def create
     render json: Present.create(params["present"])
   end
 
