@@ -3,7 +3,6 @@ class App extends React.Component {
     return (
       <div>
       <h1>Presents</h1>
-      <Presents/>
       </div>
     )
   }
@@ -11,5 +10,5 @@ class App extends React.Component {
 
 ReactDOM.render(
   <App></App>,
-  document.querySelector('container')
+  document.querySelector('.container')
 )
