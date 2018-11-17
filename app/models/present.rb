@@ -25,12 +25,12 @@ class Present
      results = DB.exec(
          <<-SQL
              SELECT *
-             FROM presents
+             FROM presents;
          SQL
      )
      return results.map do |result|
      {
-       "id" => result.first["id"],
+       "id" => result.first["id"].to_i,
        "name" => result.first["name"],
        "image" => result.first["image"],
        "price" => result.first["price"],
@@ -93,5 +93,4 @@ class Present
           "bought_status" => results.first["bought_status"]
       }
    end
-end
 end
