@@ -7,7 +7,7 @@ class Present
     attr_reader :id, :name, :image, :price, :bought_status
 
     # connect to postgres
-    DB = PG.connect(host: "localhost", port: 5432, dbname: 'christmas_list')
+    DB = PG.connect(host: "localhost", port: 5432, dbname: 'ChristmasWishList_development')
 
     # initialize options hash
     def initialize(opts = {}, id = nil)
@@ -18,39 +18,6 @@ class Present
         @bought_status = opts["bought_status"]
     end
 
-
-    # ==================================================
-    #                  PREPARED STATEMNETS
-    # ==================================================
-
-    DB.prepare("create_present",
-      <<-SQL
-          INSERT INTO presents (name, image, price, bought_status)
-          VALUES ( $1, $2, $3, $4)
-          RETURNING id, name, image, price, bought_status;
-      SQL
-    )
-
-    DB.prepare("delete_present",
-    "DELETE FROM presents WHERE id=$1 RETURNING id;"
-    )
-
-    DB.prepare("find_present",
-      <<-SQL
-          SELECT
-          * FROM presents
-          WHERE present.id=$1;
-      SQL
-    )
-
-    DB.prepare("update_present",
-      <<-SQL
-          UPDATE presents
-          SET name=$2, image=$3, price=$4, bought_status=$5
-          WHERE id=$1
-          RETURNING id, name, image, price, bought_status;
-      SQL
-    )
 
 
     # ==================================================
@@ -63,7 +30,6 @@ class Present
           <<-SQL
               SELECT *
               FROM presents
-              ORDER BY present.id DESC;
           SQL
       )
       return results.map do |result|
