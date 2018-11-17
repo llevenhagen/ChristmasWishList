@@ -19,8 +19,8 @@ class Present extends React.Component {
           <button className="button"
                 onClick={ ()=> this.props.toggleState('presentListIsVisible', 'presentIsVisible')}>Back to Present List
           </button>
-          {/*<PresentForm present={this.props.present}
-          handleSubmit={this.props.handleSubmit}/>*/}
+          <PresentForm present={this.props.present}
+          handleSubmit={this.props.handleSubmit}/>
       </div>
     )
   }

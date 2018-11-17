@@ -45,7 +45,7 @@ class Present
 
     # get one by id
     def self.find(id)
-        result = DB.exec_prepared("find_present", [id]).first
+        result = DB.exec("find_present", [id]).first
         p result
         if result
           return present = Present.new(result, result["id"])
@@ -56,13 +56,13 @@ class Present
 
     # create one
     def self.create(opts={})
-      results = DB.exec_prepared("create_present", [opts["name"], opts["image"], opts["price"], opts["bought_status"]])
+      results = DB.exec("create_present", [opts["name"], opts["image"], opts["price"], opts["bought_status"]])
       return Present.new(results.first, results.first["id"])
     end
 
     # delete one (by id)
     def self.delete(id)
-      results = DB.exec_prepared("delete_present", [id])
+      results = DB.exec("delete_present", [id])
       p 'this is the result'
       p results
       if results.first
@@ -74,7 +74,7 @@ class Present
 
     # update one (by id)
     def self.update(id, opts={})
-      results = DB.exec_prepared("update_present",
+      results = DB.exec("update_present",
         [
           id, opts["name"], opts["image"], opts["price"], opts["bought_status"]
         ]
