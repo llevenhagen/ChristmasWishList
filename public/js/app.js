@@ -11,5 +11,5 @@ class App extends React.Component {
 
 ReactDOM.render(
   <App></App>,
-  document.querySelector('container')
+  document.querySelector('.container')
 )
