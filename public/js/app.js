@@ -3,6 +3,7 @@ class App extends React.Component {
     return (
       <div>
       <h1>Presents</h1>
+      <Presents/>
       </div>
     )
   }
