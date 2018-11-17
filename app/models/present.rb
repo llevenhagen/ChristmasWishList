@@ -21,21 +21,18 @@ class Present
     # ==================================================
 
     # get all
-    def self.all
-     results = DB.exec(
-         <<-SQL
-             SELECT *
-             FROM presents
-         SQL
-     )
-     return results.map do |result|
-     {
-       "id" => result.first["id"],
-       "name" => result.first["name"],
-       "image" => result.first["image"],
-       "price" => result.first["price"],
-       "bought_status" => result.first["bought_status"]
-     }
+
+   def self.all
+         results = DB.exec("SELECT * FROM presents;")
+         return results.map do |result|
+             {
+                 "id" => result["id"].to_i,
+                 "name" => result["name"],
+                 "image" => result["image"],
+                 "price" => result["price"],
+                 "bought_status" => result["bought_status"]
+             }
+         end
    end
 
     # get one by id
@@ -53,24 +50,24 @@ class Present
     # create one
       def self.create(opts)
         results = DB.exec(
-          <<-SQL
-              INSERT INTO presents (name, image, price, bought_status)
-              VALUES ( '#{opts["name"]}', '#{opts["image"]}', '#{opts["price"]}', '#{opts["bought_status"]}' )
-              RETURNING id, name, image, price, bought_status;
-          SQL
-      )
-      return {
-          "id" => results.first["id"].to_i,
-          "name" => results.first["name"],
-          "image" => results.first["image"],
-          "price" => results.first["price"],
-          "bought_status" => results.first["bought_status"]
-      }
+     <<-SQL
+         INSERT INTO presents (name, image, price, bought_status)
+         VALUES ( '#{opts["name"]}', '#{opts["image"]}', '#{opts["price"]}', #{opts["bought_status"]} )
+         RETURNING id, name, image, price, bought_status;
+     SQL
+ )
+ return {
+        "id" => results.first["id"].to_i,
+        "name" => results.first["name"],
+        "image" => results.first["image"],
+        "price" => results.first["price"],
+        "bought_status" => results.first["bought_status"]
+    }
     end
 
     # delete one (by id)
     def self.delete(id)
-      results = DB.exec("DELETE FROM present WHERE id=#{id};")
+      results = DB.exec("DELETE FROM presents WHERE id=#{id};")
       return { "deleted" => true }
     end
 
@@ -93,5 +90,4 @@ class Present
           "bought_status" => results.first["bought_status"]
       }
    end
-end
 end
