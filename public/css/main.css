@@ -1,0 +1,79 @@
+/* 
+light brown: #DFD7D5;
+blueish white: #F1F7FB;
+brown: #695B52;
+red: #963831;
+green: #64755D; */
+
+
+body {
+  background-color: #DFD7D5;
+  background-image: url('/images/christmas-background.jpg');
+  background-size: 100%;
+  background-position: center;
+  /* background-repeat: no-repeat; */
+}
+header {
+  margin-top: -3vw;
+  margin-left: -1vw;
+  width: 101.5%;
+  background: #963831;
+  display: inline-flex;
+  justify-content: space-between;
+  text-align: center;
+
+}
+header img {
+  width: 20%;
+  height: 70%;
+  padding-top: 2vw;
+  padding-bottom: 2vw;
+}
+h1 {
+  font-size: 6vw;
+  color: #F1F7FB;
+  font-family: 'Great Vibes', cursive;
+  border-bottom: .1vw solid #F1F7FB;
+}
+
+.container {
+  text-align: center;
+  height: 50vw;
+}
+.main {
+    text-align: center;
+  width: 100%;
+  /* height: 50vw; */
+  display: block;
+}
+.presents-container {
+  margin-left: auto;
+  margin-right: auto;
+
+  text-align: center;
+  display: inline-flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 80%;
+  height: 100%;
+  margin: auto;
+}
+.present-div {
+    text-align: center;
+  width: 5vw;
+  margin: 4vw auto;
+  background: rgb(241, 247, 251, .85);
+  padding: 2vw;
+  width: 25%;
+  height: 25vw;
+  border-radius: .3vw;
+  border: .2vw solid #64755D;
+}
+
+
+font-family: 'Lobster', cursive;
+font-family: 'Great Vibes', cursive;
+font-family: 'Poiret One', cursive;
+font-family: 'Rochester', cursive;
+font-family: 'Fredericka the Great', cursive;
+font-family: 'El Messiri', sans-serif;

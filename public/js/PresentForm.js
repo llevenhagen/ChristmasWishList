@@ -18,8 +18,9 @@ class PresentForm extends React.Component {
     this.props.handleSubmit(this.state)
   }
   componentDidMount(){
-    if(this.props.person){
+    if(this.props.present){
       this.setState({
+        id: this.props.present.id,
         name: this.props.present.name,
         image: this.props.present.image,
         price: this.props.present.price,

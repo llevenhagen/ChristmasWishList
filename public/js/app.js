@@ -2,7 +2,11 @@ class App extends React.Component {
   render(){
     return (
       <div>
-      <h1>Presents</h1>
+      <header>
+      <img src="images/transparent-holly.png"/>
+        <h1>My Christmas Wish List</h1>
+        <img src="images/transparent-holly.png"/>
+        </header>
       <Presents/>
       </div>
     )
