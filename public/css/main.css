@@ -69,8 +69,14 @@ h1 {
   border-radius: .3vw;
   border: .2vw solid #64755D;
 }
+<<<<<<< HEAD
 .present-img>img {
   width: 15vw;
+=======
+
+.present-img img{
+  height: 15vw;
+>>>>>>> 0100dec65aad0a8a68384d66f89dd95409f5fd34
 }
 
 font-family: 'Lobster', cursive;
