@@ -2,7 +2,7 @@ class Presents extends React.Component {
   constructor(props){
     super(props)
     this.getPresents=this.getPresents.bind(this)
-    this.getPresent=this.getPresents.bind(this)
+    this.getPresent=this.getPresent.bind(this)
     this.deletePresent=this.deletePresent.bind(this)
     this.toggleState=this.toggleState.bind(this)
     this.handleCreate = this.handleCreate.bind(this)
@@ -61,6 +61,7 @@ class Presents extends React.Component {
     this.setState({presents: [present, ...this.state.presents]})
   }
   handleCreateSubmit(present){
+    console.log('hey')
     fetch('/presents', {
       body: JSON.stringify(present),
       method: 'POST',
@@ -76,30 +77,26 @@ class Presents extends React.Component {
     }).catch(error=> console.log(error))
   }
   handleUpdateSubmit(present) {
-    fetch('/presents/' + present.id, {
-      body: JSON.stringify(present),
-      method: 'PUT',
-      headers: {
-        'Accept': 'application/json, text/plain, */*',
-        'Content-Type': 'application/json'
-      }
-    })
-    .then(updatedPresent => {
-      return updatedPresent.json()
-    })
-    .then(jsonedPresent => {
-      this.getPresent()
-      this.toggleState('presentListIsVisible', 'presentIsVisible')
-    }).catch(error => console.log(error))
-  }
+      fetch('/presents/' + present.id, {
+        body: JSON.stringify(present),
+        method: 'PUT',
+        headers: {
+          'Accept' : 'application/json, text/plain, */*',
+          'Content-Type': 'application/json'
+        }
+      })
+      .then(updatedPresent => {
+        return updatedPresent.json()
+      })
+      .then(jsonedPresent => {
+        this.getPresents()
+        this.toggleState('presentListIsVisible', 'presentIsVisible')
+      }).catch(error => console.log(error))
+      console.log(present)
+    }
   render(){
     return(
-      <div>
-        <h1>My Christmas Wish List</h1>
-        <button
-        onClick={()=>this.toggleState('addPresentIsVisible', 'presentListIsVisible')}
-        >Add a Present</button>
-
+      <div className="main">
         {
           this.state.presentListIsVisible ?
           <PresentList
@@ -114,7 +111,7 @@ class Presents extends React.Component {
           <PresentForm
           toggleState={this.toggleState}
           handleCreate={this.handleCreate}
-          handleSubmit={this.handleSubmit}/>
+          handleSubmit={this.handleCreateSubmit}/>
           : ''
         }
         {
@@ -125,6 +122,10 @@ class Presents extends React.Component {
             handleSubmit={this.handleUpdateSubmit}/>
             : ''
         }
+        <br/>
+        <button
+        onClick={()=>this.toggleState('addPresentIsVisible', 'presentListIsVisible')}
+        >Add a Present</button>
         </div>
     )
   }
