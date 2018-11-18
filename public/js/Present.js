@@ -27,10 +27,7 @@ class Present extends React.Component {
             <h4><span>Bought Status:</span>
             {this.props.present.bought_status}</h4>
           </div>
-          <button className="button"
-                onClick={ ()=> this.props.toggleState('presentListIsVisible', 'presentIsVisible')}>Back to Present List
-          </button>
-          <button onClick={()=> this.toggleState('editPresentIsVisible')}>Edit present</button>
+          <button onClick={()=> this.toggleState('editPresentIsVisible')}>Edit</button>
           {
             this.state.editPresentIsVisible ?
           <PresentForm present={this.props.present}

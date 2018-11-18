@@ -124,9 +124,16 @@ class Presents extends React.Component {
             : ''
         }
         <br/>
-        <button
+        <button className="main-button"
         onClick={()=>this.toggleState('addPresentIsVisible', 'presentListIsVisible')}
         >Add a Present</button>
+        {
+          this.state.presentIsVisible ?
+        <button className="main-button"
+              onClick={ ()=> this.toggleState('presentListIsVisible', 'presentIsVisible')}>Back to Present List
+        </button>
+        : ''
+    }
         </div>
     )
   }

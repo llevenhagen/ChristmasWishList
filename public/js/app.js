@@ -5,9 +5,10 @@ class App extends React.Component {
       <header>
       <img src="images/transparent-holly.png"/>
         <h1>My Christmas Wish List</h1>
-        <img src="images/transparent-holly.png"/>
+        <img className="holly-4" src="images/holly-4.png"/>
         </header>
       <Presents/>
+      <Footer/>
       </div>
     )
   }
