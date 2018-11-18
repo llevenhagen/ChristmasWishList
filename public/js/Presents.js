@@ -2,11 +2,8 @@ class Presents extends React.Component {
   constructor(props){
     super(props)
     this.getPresents=this.getPresents.bind(this)
-<<<<<<< HEAD
     this.getPresents=this.getPresents.bind(this)
-=======
     this.getPresent=this.getPresent.bind(this)
->>>>>>> 493a0e4c70f4a8965073a55489105acb7a7b449c
     this.deletePresent=this.deletePresent.bind(this)
     this.toggleState=this.toggleState.bind(this)
     this.handleCreate = this.handleCreate.bind(this)

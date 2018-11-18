@@ -1,4 +1,4 @@
-/* 
+/*
 light brown: #DFD7D5;
 blueish white: #F1F7FB;
 brown: #695B52;
@@ -70,6 +70,9 @@ h1 {
   border: .2vw solid #64755D;
 }
 
+.present-img img{
+  height: 15vw;
+}
 
 font-family: 'Lobster', cursive;
 font-family: 'Great Vibes', cursive;

@@ -13,7 +13,7 @@ class Present extends React.Component {
             {this.props.present.name}</h4>
             <h4><span>Price:</span>
             {this.props.present.price}</h4>
-            <h4><span>Name:</span>
+            <h4><span>Bought Status:</span>
             {this.props.present.bought_status}</h4>
           </div>
           <button className="button"
