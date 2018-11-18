@@ -1,4 +1,4 @@
-/* 
+/*
 light brown: #DFD7D5;
 blueish white: #F1F7FB;
 brown: #695B52;
@@ -59,7 +59,7 @@ h1 {
   margin: auto;
 }
 .present-div {
-    text-align: center;
+  text-align: center;
   width: 5vw;
   margin: 4vw auto;
   background: rgb(241, 247, 251, .85);
@@ -69,7 +69,9 @@ h1 {
   border-radius: .3vw;
   border: .2vw solid #64755D;
 }
-
+.present-img>img {
+  width: 15vw;
+}
 
 font-family: 'Lobster', cursive;
 font-family: 'Great Vibes', cursive;
