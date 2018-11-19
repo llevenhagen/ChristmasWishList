@@ -19,7 +19,6 @@ class PresentForm extends React.Component {
     console.log(this.state.bought_status);
   }
   handleSubmit(event){
-    console.log(this.props.present.bought_status);
     event.preventDefault()
     this.props.handleSubmit(this.state)
   }

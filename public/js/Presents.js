@@ -78,6 +78,7 @@ class Presents extends React.Component {
     }).catch(error=> console.log(error))
   }
   handleUpdateSubmit(present) {
+    console.log('this is handle update submit');
       fetch('/presents/' + present.id, {
         body: JSON.stringify(present),
         method: 'PUT',
