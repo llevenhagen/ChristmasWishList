@@ -6,4 +6,5 @@ class Footer extends React.Component{
       </footer>
     )
   }
+  
 }
