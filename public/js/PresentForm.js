@@ -11,9 +11,15 @@ class PresentForm extends React.Component {
     }
   }
   handleChange(event){
-    this.setState({[event.target.id]: event.target.value})
+    console.log(event.target.checked);
+    const value = event.target.type === 'checkbox' ? event.target.checked : event.target.value;
+    this.setState({
+      [event.target.id]: value
+    })
+    console.log(this.state.bought_status);
   }
   handleSubmit(event){
+    console.log(this.props.present.bought_status);
     event.preventDefault()
     this.props.handleSubmit(this.state)
   }
@@ -71,14 +77,13 @@ class PresentForm extends React.Component {
               value={this.state.bought_status}
               onChange={this.handleChange}
               className="input"
-              type="boolean"
+              type="checkbox"
               id="bought_status"
               ref="bought_status"
             />
           </div>
           <div>
             <input
-            idName="submit-button"
               className="submit-button"
               type="submit"/>
             <button

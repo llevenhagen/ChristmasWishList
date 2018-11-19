@@ -25,7 +25,9 @@ class Present extends React.Component {
             <h4><span>Price:</span>
             {this.props.present.price}</h4>
             <h4><span>Bought Status:</span>
-            {this.props.present.bought_status}</h4>
+            {
+             this.props.present.bought_status /*}== true ? "Someone already bought it!" : "Still on the list!"*/
+            }</h4>
           </div>
           <button onClick={()=> this.toggleState('editPresentIsVisible')}>Edit</button>
           {
@@ -35,6 +37,6 @@ class Present extends React.Component {
         }
       </div>
     )
-    
+
   }
 }
