@@ -35,5 +35,6 @@ class Present extends React.Component {
         }
       </div>
     )
+    
   }
 }
