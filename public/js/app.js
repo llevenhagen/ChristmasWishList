@@ -8,7 +8,6 @@ class App extends React.Component {
         <img className="holly-4" src="images/holly-4.png"/>
         </header>
       <Presents/>
-      <Footer/>
       </div>
     )
   }

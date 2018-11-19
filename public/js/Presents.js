@@ -122,18 +122,24 @@ class Presents extends React.Component {
             toggleState={this.toggleState}
             present={this.state.present}
             handleSubmit={this.handleUpdateSubmit}/>
-            : <button className="main-button"
-            onClick={()=>this.toggleState('addPresentIsVisible', 'presentListIsVisible')}
-            >Add a Present</button>
+            : ''
+        }
+        {
+          this.state.presentListIsVisible ? <button className="main-button"
+          onClick={()=>this.toggleState('addPresentIsVisible', 'presentListIsVisible')}
+          >Add a Present</button> : ' '
         }
         <br/>
         {
           this.state.presentIsVisible ?
-        <button className="main-button"
+        <button className="main-button back-to-present-button"
               onClick={ ()=> this.toggleState('presentListIsVisible', 'presentIsVisible')}>Back to Present List
         </button>
         : ''
     }
+    { this.state.presentListIsVisible?
+    <Footer/> : ''
+  }
         </div>
     )
 

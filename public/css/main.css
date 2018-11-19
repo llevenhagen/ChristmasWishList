@@ -7,7 +7,7 @@ green: #64755D; */
 body {
   background-color: #DFD7D5;
   background-image: url('/images/christmas-background.jpg');
-  background-size: contain;
+  background-size: 130%;
   background-position: center;
   /* background-repeat: no-repeat; */
 }
@@ -173,11 +173,12 @@ footer p {
 form {
   background: #F1F7FB;
   position: absolute;
+  margin-bottom: 5vw;
   top: 20vw;
   left: 25vw;
   padding: 6vw 2vw 2vw;
   width: 45vw;
-  height: 42vw;
+  height: 43vw;
   border-radius: .5vw;
   border: .5vw solid #64755D;
   box-shadow: 0px 0px 29px 5px rgba(100, 117, 93, 0.78);
@@ -231,24 +232,12 @@ form button {
   box-shadow: 4px 3px 8px -2px #963831;
   font-weight: 700;
 }
-html, body {
-  height: 100%;
+.back-to-present-button {
+  margin-bottom: 5vw;
 }
-body {
-  display: flex;
-  flex-direction: column;
-  height: 70%;
-  overflow-y: scroll;
-}
-.main {
-  flex: 1 0 auto;
-}
-.footer {
-  flex-shrink: 0;
-}
-font-family: 'Lobster', cursive;
+/* font-family: 'Lobster', cursive;
 font-family: 'Great Vibes', cursive;
 font-family: 'Poiret One', cursive;
 font-family: 'Rochester', cursive;
 font-family: 'Fredericka the Great', cursive;
-font-family: 'El Messiri', sans-serif;
+font-family: 'El Messiri', sans-serif; */
