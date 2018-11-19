@@ -1,7 +1,7 @@
 class App extends React.Component {
   render(){
     return (
-      <div>
+      <div className="app-div">
       <header>
       <img src="images/transparent-holly.png"/>
         <h1>My Christmas Wish List</h1>
@@ -12,7 +12,7 @@ class App extends React.Component {
       </div>
     )
   }
-  
+
 }
 
 ReactDOM.render(

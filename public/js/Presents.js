@@ -121,12 +121,11 @@ class Presents extends React.Component {
             toggleState={this.toggleState}
             present={this.state.present}
             handleSubmit={this.handleUpdateSubmit}/>
-            : ''
+            : <button className="main-button"
+            onClick={()=>this.toggleState('addPresentIsVisible', 'presentListIsVisible')}
+            >Add a Present</button>
         }
         <br/>
-        <button className="main-button"
-        onClick={()=>this.toggleState('addPresentIsVisible', 'presentListIsVisible')}
-        >Add a Present</button>
         {
           this.state.presentIsVisible ?
         <button className="main-button"
@@ -136,6 +135,6 @@ class Presents extends React.Component {
     }
         </div>
     )
-    
+
   }
 }

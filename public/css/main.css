@@ -4,16 +4,17 @@ blueish white: #F1F7FB;
 brown: #695B52;
 red: #963831;
 green: #64755D; */
-
-
 body {
   background-color: #DFD7D5;
   background-image: url('/images/christmas-background.jpg');
-  background-size: 100%;
+  background-size: contain;
   background-position: center;
   /* background-repeat: no-repeat; */
 }
-
+.app-div {
+  height: 100%;
+  width: 100%;
+}
 header {
   margin-top: -3vw;
   margin-left: -1vw;
@@ -23,8 +24,8 @@ header {
   display: inline-flex;
   justify-content: space-between;
   text-align: center;
-
 }
+
 header img {
   width: 16%;
   height: 67%;
@@ -34,13 +35,15 @@ header img {
   padding-top: 2vw;
   padding-bottom: 2vw;
 }
-.holly-4{
+
+.holly-4 {
   margin-top: 4.3vw;
   width: 17%;
   height: 68%;
   margin-left: 2.5vw;
   margin-right: 1vw;
 }
+
 h1 {
   padding-top: 2vw;
   font-size: 6.2vw;
@@ -52,14 +55,16 @@ h1 {
 
 .container {
   text-align: center;
-  height: 50vw;
+  height: 100%;
 }
+
 .main {
-    text-align: center;
+  text-align: center;
   width: 100%;
-  /* height: 50vw; */
-  display: block;
+  height: 100%;
+  /* display: block; */
 }
+
 .presents-container {
   margin-left: auto;
   margin-right: auto;
@@ -71,6 +76,7 @@ h1 {
   height: 100%;
   margin: auto;
 }
+
 .present-div {
   text-align: center;
   margin: 4vw auto;
@@ -79,16 +85,18 @@ h1 {
   width: 24%;
   height: 19vw;
   border-radius: .5vw;
-  box-shadow: 0px 0px 29px 5px rgba(100,117,93,0.78);
-  box-shadow: inset 0px 0px 11px 2px rgba(100,117,93,0.56);
+  box-shadow: 0px 0px 29px 5px rgba(100, 117, 93, 0.78);
+  box-shadow: inset 0px 0px 11px 2px rgba(100, 117, 93, 0.56);
 }
+
 .present-img>img {
-width: 17vw;
-border: .5vw solid #8B7104;
-border-radius: .2vw;
-margin-bottom: 2.2vw;
-box-shadow: 1px 0px 8px 1px rgba(105,91,82,0.45);
+  height: 10vw;
+  border: .5vw solid #8B7104;
+  border-radius: .2vw;
+  margin-bottom: 2.2vw;
+  box-shadow: 1px 0px 8px 1px rgba(105, 91, 82, 0.45);
 }
+
 button {
   color: #963831;
   border: .1vw solid #8B7104;
@@ -97,12 +105,14 @@ button {
   border-radius: .5vw;
   margin: auto .5vw;
   font-family: 'Fredericka the Great', cursive;
-  box-shadow: 4px 3px 8px -2px rgba(139,113,4,0.67);
+  box-shadow: 4px 3px 8px -2px rgba(139, 113, 4, 0.67);
 }
-button:hover, .present-show-div .submit-button:hover{
+
+button:hover, .present-show-div .submit-button:hover {
   background: #8B7104;
   color: #F1F7FB;
 }
+
 .present-show-div {
   text-align: center;
   margin: 4vw auto;
@@ -111,14 +121,17 @@ button:hover, .present-show-div .submit-button:hover{
   width: 40vw;
   height: 40vw;
   border-radius: .5vw;
-  box-shadow: 0px 0px 29px 5px rgba(100,117,93,0.78);
-  box-shadow: inset 0px 0px 11px 2px rgba(100,117,93,0.56);
+  box-shadow: 0px 0px 29px 5px rgba(100, 117, 93, 0.78);
+  box-shadow: inset 0px 0px 11px 2px rgba(100, 117, 93, 0.56);
 }
+
 .present-image-div img {
   width: 25vw;
   border: .7vw solid rgb(150, 56, 49, .8);
   border-radius: .5vw;
+  margin-top: 2vw;
 }
+
 .present-info-div {
   font-family: 'El Messiri', sans-serif;
   font-size: 2vw;
@@ -127,22 +140,24 @@ button:hover, .present-show-div .submit-button:hover{
   text-align: left;
   margin-left: 9vw;
 }
-.present-info-div span{
-font-family: 'Fredericka the Great', cursive;
-margin-right: 2vw;
-color:#8B7104;
+
+.present-info-div span {
+  font-family: 'Fredericka the Great', cursive;
+  margin-right: 2vw;
+  color: #8B7104;
 }
 
 footer {
   background: rgb(139, 113, 4, .5);
   width: 102%;
-  margin: 5vw auto auto -1vw;
+  margin: 12vw auto auto -1vw;
   font-family: 'El Messiri', sans-serif;
   color: #F1F7FB;
   text-align: left;
-  bottom: 0;
-  left: 0;
+  vertical-align: bottom;
+
 }
+
 footer p {
   margin-left: 4vw;
   line-height: 200%;
@@ -150,10 +165,11 @@ footer p {
   font-size: 1.2vw;
 }
 
-.main-button:hover{
+.main-button:hover {
   background: #963831;
   color: #F1F7FB;
 }
+
 form {
   background: #F1F7FB;
   position: absolute;
@@ -161,14 +177,15 @@ form {
   left: 25vw;
   padding: 6vw 2vw 2vw;
   width: 45vw;
-  height: 45vw;
+  height: 42vw;
   border-radius: .5vw;
   border: .5vw solid #64755D;
-  box-shadow: 0px 0px 29px 5px rgba(100,117,93,0.78);
-  box-shadow: inset 0px 0px 11px 2px rgba(100,117,93,0.56);
+  box-shadow: 0px 0px 29px 5px rgba(100, 117, 93, 0.78);
+  box-shadow: inset 0px 0px 11px 2px rgba(100, 117, 93, 0.56);
   font-family: 'Fredericka the Great', cursive;
   font-size: 2vw;
 }
+
 form input {
   font-family: 'El Messiri', sans-serif;
   background: #64755D;
@@ -178,7 +195,8 @@ form input {
   margin: 1vw auto;
   width: 50%;
 }
-form .submit-button{
+
+form .submit-button {
   background: white;
   width: 10vw;
   color: #963831;
@@ -187,8 +205,8 @@ form .submit-button{
   border-radius: .5vw;
   margin: auto .5vw;
   font-family: 'Fredericka the Great', cursive;
-  box-shadow: 4px 3px 8px -2px rgba(139,113,4,0.67);
-    font-size: 2vw;
+  box-shadow: 4px 3px 8px -2px rgba(139, 113, 4, 0.67);
+  font-size: 2vw;
 }
 
 form button {
@@ -197,10 +215,11 @@ form button {
   padding: auto 5vw;
 }
 
-.present-show-div .submit-button, .cancel-button{
+.present-show-div .submit-button, .cancel-button {
   font-size: 2vw;
   margin-top: 4vw;
 }
+
 .main-button {
   color: #8B7104;
   border: .1vw solid #963831;
@@ -211,6 +230,21 @@ form button {
   font-family: 'Great Vibes', cursive;
   box-shadow: 4px 3px 8px -2px #963831;
   font-weight: 700;
+}
+html, body {
+  height: 100%;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  height: 70%;
+  overflow-y: scroll;
+}
+.main {
+  flex: 1 0 auto;
+}
+.footer {
+  flex-shrink: 0;
 }
 font-family: 'Lobster', cursive;
 font-family: 'Great Vibes', cursive;
