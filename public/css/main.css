@@ -77,13 +77,13 @@ h1 {
   background: rgb(241, 247, 251, .85);
   padding: 2vw;
   width: 24%;
-  height: 18vw;
+  height: 19vw;
   border-radius: .5vw;
   box-shadow: 0px 0px 29px 5px rgba(100,117,93,0.78);
   box-shadow: inset 0px 0px 11px 2px rgba(100,117,93,0.56);
 }
 .present-img>img {
-width: 15vw;
+width: 17vw;
 border: .5vw solid #8B7104;
 border-radius: .2vw;
 margin-bottom: 2.2vw;
@@ -99,7 +99,7 @@ button {
   font-family: 'Fredericka the Great', cursive;
   box-shadow: 4px 3px 8px -2px rgba(139,113,4,0.67);
 }
-button:hover{
+button:hover, .present-show-div .submit-button:hover{
   background: #8B7104;
   color: #F1F7FB;
 }
@@ -107,7 +107,7 @@ button:hover{
   text-align: center;
   margin: 4vw auto;
   background: rgb(241, 247, 251, .85);
-  padding: 2vw 2vw 4vw;
+  padding: 2vw 2vw 7vw;
   width: 40vw;
   height: 40vw;
   border-radius: .5vw;
@@ -132,16 +132,16 @@ font-family: 'Fredericka the Great', cursive;
 margin-right: 2vw;
 color:#8B7104;
 }
-.present-show-div button {
-  margin: auto 2vw;
-}
+
 footer {
   background: rgb(139, 113, 4, .5);
   width: 102%;
-  margin: 5vw auto 0;
+  margin: 5vw auto auto -1vw;
   font-family: 'El Messiri', sans-serif;
   color: #F1F7FB;
   text-align: left;
+  bottom: 0;
+  left: 0;
 }
 footer p {
   margin-left: 4vw;
@@ -149,32 +149,68 @@ footer p {
   padding-top: .5vw;
   font-size: 1.2vw;
 }
+
+.main-button:hover{
+  background: #963831;
+  color: #F1F7FB;
+}
+form {
+  background: #F1F7FB;
+  position: absolute;
+  top: 20vw;
+  left: 25vw;
+  padding: 6vw 2vw 2vw;
+  width: 45vw;
+  height: 45vw;
+  border-radius: .5vw;
+  border: .5vw solid #64755D;
+  box-shadow: 0px 0px 29px 5px rgba(100,117,93,0.78);
+  box-shadow: inset 0px 0px 11px 2px rgba(100,117,93,0.56);
+  font-family: 'Fredericka the Great', cursive;
+  font-size: 2vw;
+}
+form input {
+  font-family: 'El Messiri', sans-serif;
+  background: #64755D;
+  color: #F1F7FB;
+  font-size: 1.5vw;
+  padding: .5vw;
+  margin: 1vw auto;
+  width: 50%;
+}
+form .submit-button{
+  background: white;
+  width: 10vw;
+  color: #963831;
+  border: .1vw solid #8B7104;
+  padding: .5vw;
+  border-radius: .5vw;
+  margin: auto .5vw;
+  font-family: 'Fredericka the Great', cursive;
+  box-shadow: 4px 3px 8px -2px rgba(139,113,4,0.67);
+    font-size: 2vw;
+}
+
+form button {
+  font-size: 2vw;
+  margin: auto 2vw;
+  padding: auto 5vw;
+}
+
+.present-show-div .submit-button, .cancel-button{
+  font-size: 2vw;
+  margin-top: 4vw;
+}
 .main-button {
   color: #8B7104;
   border: .1vw solid #963831;
   font-size: 2.6vw;
-  padding: .5vw;
+  padding: auto 10vw;
   border-radius: .5vw;
   margin: auto 2vw;
   font-family: 'Great Vibes', cursive;
   box-shadow: 4px 3px 8px -2px #963831;
   font-weight: 700;
-}
-.main-button:hover{
-  background: #963831;
-  color: #F1F7FB;
-}
-.present-show-div form {
-  background: rgba(100,117,93,0.8);
-  position: absolute;
-  top: 20vw;
-  left: 25vw;
-  padding: 2vw;
-  width: 45vw;
-  height: 45vw;
-  border-radius: .5vw;
-  box-shadow: 0px 0px 29px 5px rgba(100,117,93,0.78);
-  box-shadow: inset 0px 0px 11px 2px rgba(100,117,93,0.56);
 }
 font-family: 'Lobster', cursive;
 font-family: 'Great Vibes', cursive;

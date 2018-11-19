@@ -78,15 +78,16 @@ class PresentForm extends React.Component {
           </div>
           <div>
             <input
-              className="button"
+            idName="submit-button"
+              className="submit-button"
               type="submit"/>
             <button
-              className="button"
+              className="cancel-button"
               onClick={()=> this.props.toggleState('presentListIsVisible', 'addPresentIsVisible')}>Cancel</button>
           </div>
         </form>
       </div>
     )
   }
-  
+
 }
