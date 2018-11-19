@@ -13,27 +13,41 @@ body {
   background-position: center;
   /* background-repeat: no-repeat; */
 }
+
 header {
   margin-top: -3vw;
   margin-left: -1vw;
+  margin-bottom: 3vw;
   width: 101.5%;
-  background: #963831;
+  background: rgb(150, 56, 49, .95);
   display: inline-flex;
   justify-content: space-between;
   text-align: center;
 
 }
 header img {
-  width: 20%;
-  height: 70%;
+  width: 16%;
+  height: 67%;
+  margin-top: 4vw;
+  margin-left: 2vw;
+  margin-right: 2vw;
   padding-top: 2vw;
   padding-bottom: 2vw;
 }
+.holly-4{
+  margin-top: 4.3vw;
+  width: 17%;
+  height: 68%;
+  margin-left: 2.5vw;
+  margin-right: 1vw;
+}
 h1 {
-  font-size: 6vw;
+  padding-top: 2vw;
+  font-size: 6.2vw;
   color: #F1F7FB;
   font-family: 'Great Vibes', cursive;
   border-bottom: .1vw solid #F1F7FB;
+  box-shadow: 0px 8px 8px -8px #F1F7FB;
 }
 
 .container {
@@ -49,36 +63,119 @@ h1 {
 .presents-container {
   margin-left: auto;
   margin-right: auto;
-
   text-align: center;
   display: inline-flex;
   justify-content: space-around;
   flex-wrap: wrap;
-  width: 80%;
+  width: 85%;
   height: 100%;
   margin: auto;
 }
 .present-div {
   text-align: center;
-  width: 5vw;
   margin: 4vw auto;
   background: rgb(241, 247, 251, .85);
   padding: 2vw;
-  width: 25%;
-  height: 25vw;
-  border-radius: .3vw;
-  border: .2vw solid #64755D;
+  width: 24%;
+  height: 18vw;
+  border-radius: .5vw;
+  box-shadow: 0px 0px 29px 5px rgba(100,117,93,0.78);
+  box-shadow: inset 0px 0px 11px 2px rgba(100,117,93,0.56);
 }
-<<<<<<< HEAD
 .present-img>img {
-  width: 15vw;
-=======
-
-.present-img img{
-  height: 15vw;
->>>>>>> 0100dec65aad0a8a68384d66f89dd95409f5fd34
+width: 15vw;
+border: .5vw solid #8B7104;
+border-radius: .2vw;
+margin-bottom: 2.2vw;
+box-shadow: 1px 0px 8px 1px rgba(105,91,82,0.45);
 }
-
+button {
+  color: #963831;
+  border: .1vw solid #8B7104;
+  font-size: 1.5vw;
+  padding: .5vw;
+  border-radius: .5vw;
+  margin: auto .5vw;
+  font-family: 'Fredericka the Great', cursive;
+  box-shadow: 4px 3px 8px -2px rgba(139,113,4,0.67);
+}
+button:hover{
+  background: #8B7104;
+  color: #F1F7FB;
+}
+.present-show-div {
+  text-align: center;
+  margin: 4vw auto;
+  background: rgb(241, 247, 251, .85);
+  padding: 2vw 2vw 4vw;
+  width: 40vw;
+  height: 40vw;
+  border-radius: .5vw;
+  box-shadow: 0px 0px 29px 5px rgba(100,117,93,0.78);
+  box-shadow: inset 0px 0px 11px 2px rgba(100,117,93,0.56);
+}
+.present-image-div img {
+  width: 25vw;
+  border: .7vw solid rgb(150, 56, 49, .8);
+  border-radius: .5vw;
+}
+.present-info-div {
+  font-family: 'El Messiri', sans-serif;
+  font-size: 2vw;
+  font-weight: 700;
+  color: #608EAC;
+  text-align: left;
+  margin-left: 9vw;
+}
+.present-info-div span{
+font-family: 'Fredericka the Great', cursive;
+margin-right: 2vw;
+color:#8B7104;
+}
+.present-show-div button {
+  margin: auto 2vw;
+}
+footer {
+  background: rgb(139, 113, 4, .5);
+  width: 102%;
+  margin: 5vw auto 0;
+  font-family: 'El Messiri', sans-serif;
+  color: #F1F7FB;
+  text-align: left;
+}
+footer p {
+  margin-left: 4vw;
+  line-height: 200%;
+  padding-top: .5vw;
+  font-size: 1.2vw;
+}
+.main-button {
+  color: #8B7104;
+  border: .1vw solid #963831;
+  font-size: 2.6vw;
+  padding: .5vw;
+  border-radius: .5vw;
+  margin: auto 2vw;
+  font-family: 'Great Vibes', cursive;
+  box-shadow: 4px 3px 8px -2px #963831;
+  font-weight: 700;
+}
+.main-button:hover{
+  background: #963831;
+  color: #F1F7FB;
+}
+.present-show-div form {
+  background: rgba(100,117,93,0.8);
+  position: absolute;
+  top: 20vw;
+  left: 25vw;
+  padding: 2vw;
+  width: 45vw;
+  height: 45vw;
+  border-radius: .5vw;
+  box-shadow: 0px 0px 29px 5px rgba(100,117,93,0.78);
+  box-shadow: inset 0px 0px 11px 2px rgba(100,117,93,0.56);
+}
 font-family: 'Lobster', cursive;
 font-family: 'Great Vibes', cursive;
 font-family: 'Poiret One', cursive;
