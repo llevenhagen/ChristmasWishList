@@ -17,7 +17,7 @@ class PresentList extends React.Component {
                   alt={present.name}/>
               </div>
               <div className="present-name">
-              
+
                 <button className="button"
                 onClick={()=>
                   this.props.deletePresent(present, index)}>Delete</button>
