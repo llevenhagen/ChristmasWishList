@@ -1,5 +1,5 @@
 # Christmas Wish List
-<p align="center>"
+<p align="center">
 By Shanaun Clayton and Laura Levenhagen
 </p>
 
