@@ -1,4 +1,5 @@
-# Christmas Wish List
+<img width="1192" alt="screen shot 2018-11-19 at 4 04 52 pm" src="https://user-images.githubusercontent.com/42528266/48742718-f1800480-ec14-11e8-8d03-0bb9157b57a3.png">
+
 <p align="center">
 By Shanaun Clayton and Laura Levenhagen
 </p>
