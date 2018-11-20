@@ -95,6 +95,7 @@ h1 {
   border-radius: .2vw;
   margin-bottom: 2.2vw;
   box-shadow: 1px 0px 8px 1px rgba(105, 91, 82, 0.45);
+  cursor: pointer;
 }
 
 button {
@@ -106,10 +107,20 @@ button {
   margin: auto .5vw;
   font-family: 'Fredericka the Great', cursive;
   box-shadow: 4px 3px 8px -2px rgba(139, 113, 4, 0.67);
+  cursor: pointer;
 }
 
-button:hover, .present-show-div .submit-button:hover {
-  background: #8B7104;
+button:hover {
+  background: white;
+  color: #608EAC;
+  transform: scale(1.15);
+  transition: .5s ease-in-out;
+}
+
+.present-show-div .submit-button:hover, .main-button:hover, input[class="submit-button"]:hover{
+  transform: scale(1.15);
+  transition: .5s ease-in-out;
+  background: #963831;
   color: #F1F7FB;
 }
 .edit-button {
@@ -170,11 +181,6 @@ footer p {
   font-size: 1.2vw;
 }
 
-.main-button:hover {
-  background: #963831;
-  color: #F1F7FB;
-}
-
 form {
   background: #F1F7FB;
   position: absolute;
@@ -190,6 +196,7 @@ form {
   box-shadow: inset 0px 0px 11px 2px rgba(100, 117, 93, 0.56);
   font-family: 'Fredericka the Great', cursive;
   font-size: 2vw;
+  text-align: center;
 }
 
 form input {
@@ -213,6 +220,7 @@ form .submit-button {
   font-family: 'Fredericka the Great', cursive;
   box-shadow: 4px 3px 8px -2px rgba(139, 113, 4, 0.67);
   font-size: 2vw;
+  cursor: pointer;
 }
 
 form button {
@@ -226,7 +234,7 @@ form button {
   margin-top: 4vw;
 }
 .cancel-button {
-  margin-left: -32vw;
+  margin-left: -35vw;
   margin-top: -1vw;
   position: absolute;
 }
@@ -244,6 +252,204 @@ form button {
 .back-to-present-button {
   margin-bottom: 5vw;
 }
+@media
+only screen and (max-width: 600px), (max-device-width: 600px) {
+
+.presents-container {
+  display: block;
+}
+.present-div {
+  width: 95%;
+  height: 80vw;
+  border-radius: .5vw;
+  background: #F1F7FB;
+}
+
+.present-img>img {
+  height: 40vw;
+  max-width: 80%;
+  margin-top: 10vw;
+  margin-bottom: 7vw;
+  border: 2vw solid #8B7104;
+
+}
+button, input[class="submit-button"], .present-show-div .submit-button{
+  font-size: 7vw;
+  background: white;
+}
+input[class="submit-button"]{
+  font-size: 7vw;
+  background: white;
+  width: 30vw;
+}
+.main-button {
+  margin-top: 4vw;
+  font-size: 9vw;
+  background: white;
+}
+header {
+  background: #963831;
+}
+h1 {
+  font-size: 10vw;
+}
+.present-show-div {
+  width: 90%;
+  height: 130vw;
+  background: #F1F7FB;
+}
+.present-image-div {
+  height: 40%;
+    text-align: center;
+}
+.present-image-div img {
+ min-width: 95%;
+  height: 100%;
+  margin: auto;
+}
+.present-info-div {
+    font-size: 6vw;
+}
+.edit-button {
+  font-size: 7vw;
+  background: white;
+  width: 30vw;
+  margin-top: 4vw;
+}
+  form {
+  font-size: 4vw;
+  padding: 10vw 5vw;
+  width: 70%;
+  height: 60%;
+  top: 40vw;
+  left: 9vw;
+  text-align: center;
+}
+form input {
+  margin-bottom: 5vw;
+  width: 90%;
+  font-size: 4vw;
+  padding: 2vw;
+  margin-bottom: 10vw;
+}
+input[type='checkbox'] {
+    -webkit-appearance:none;
+    width:30px;
+    height:30px;
+    background:white;
+    border-radius:5px;
+    border:2px solid #555;
+}
+input[type='checkbox']:checked {
+    background: #abd;
+}
+.cancel-button {
+margin-top: -15vw;
+font-size: 7vw;
+border-radius: .5vw;
+}
+}
+@media
+only screen and (max-width: 760px),
+(min-device-width: 768px) and (max-device-width: 1024px)  {
+  /* .presents-container {
+    display: block;
+  } */
+  .present-div {
+    width: 40%;
+    height: 45vw;
+    border-radius: .5vw;
+    background: #F1F7FB;
+  }
+
+  .present-img>img {
+    height: 18vw;
+    max-width: 80%;
+    margin-top: 5vw;
+    margin-bottom: 7vw;
+    border: 1vw solid #8B7104;
+
+  }
+  .main-button {
+    margin-top: 4vw;
+    font-size: 7vw;
+    background: white;
+  }
+  header {
+    background: #963831;
+  }
+  h1 {
+    font-size: 9vw;
+  }
+  .present-show-div {
+    width: 90%;
+    height: 125vw;
+    background: #F1F7FB;
+  }
+  .present-image-div {
+    height: 40%;
+      text-align: center;
+  }
+  .present-image-div img {
+   min-width: 85%;
+    height: 90%;
+    margin: 4vw auto auto;
+  }
+  .present-info-div {
+      font-size: 6vw;
+  }
+  .edit-button {
+    font-size: 5vw;
+    background: white;
+    width: 30vw;
+    margin-top: 7vw;
+  }
+    form {
+    font-size: 4vw;
+    padding: 5vw 5vw;
+    width: 70%;
+    height: 80%;
+    top: 40vw;
+    left: 9vw;
+    text-align: center;
+  }
+  form input {
+    margin-bottom: 5vw;
+    width: 90%;
+    font-size: 2vw;
+    padding: 2vw;
+    margin-bottom: 10vw;
+  }
+  input[type='checkbox'] {
+      -webkit-appearance:none;
+      width:30px;
+      height:30px;
+      background:white;
+      border-radius:5px;
+      border:2px solid #555;
+  }
+  input[type='checkbox']:checked {
+      background: #abd;
+  }
+  .cancel-button {
+  margin-top: -8vw;
+  font-size: 5vw;
+  border-radius: .5vw;
+  }
+
+  button, input[class="submit-button"], .present-show-div .submit-button{
+    font-size: 5vw;
+    background: white;
+  }
+  button {
+    font-size: 4vw;
+  }
+  input[class="submit-button"]{
+    font-size: 5vw;
+    background: white;
+    width: 30vw;
+  }
+  }
 /* font-family: 'Lobster', cursive;
 font-family: 'Great Vibes', cursive;
 font-family: 'Poiret One', cursive;
