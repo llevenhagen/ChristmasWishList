@@ -129,8 +129,9 @@ button:hover, .present-show-div .submit-button:hover {
 }
 
 .present-image-div img {
-  width: 25vw;
-  max-height: 50vw;
+  max-width: 25vw;
+  height: 25vw;
+  max-height: 30vw;
   border: .7vw solid rgb(150, 56, 49, .8);
   border-radius: .5vw;
   margin-top: 2vw;
