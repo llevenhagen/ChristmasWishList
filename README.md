@@ -11,7 +11,7 @@ By Shanaun Clayton and Laura Levenhagen
 Christmas Wish List is in affect a Christmas gift registry where you can add what you want and your friends and family can go in and check what they plan on buying you. This way, no one has trouble deciding what to buy you, and there are no repeat gifts.  
 
 ## Wireframes
-<img src="https://user-images.githubusercontent.com/42528266/48742923-bc27e680-ec15-11e8-8729-bd10a949247e.png" width="360"/>
+<img src="https://user-images.githubusercontent.com/42528266/48742923-bc27e680-ec15-11e8-8729-bd10a949247e.png" width="500" align="center"/>
 
 
 ## Technologies
