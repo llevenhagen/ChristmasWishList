@@ -93,6 +93,7 @@ h1 {
   height: 10vw;
   border: .5vw solid #8B7104;
   border-radius: .2vw;
+  margin-top: 1vw;
   margin-bottom: 2.2vw;
   box-shadow: 1px 0px 8px 1px rgba(105, 91, 82, 0.45);
   cursor: pointer;
