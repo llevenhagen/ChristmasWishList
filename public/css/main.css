@@ -112,7 +112,10 @@ button:hover, .present-show-div .submit-button:hover {
   background: #8B7104;
   color: #F1F7FB;
 }
-
+.edit-button {
+  margin-top: 2vw;
+  font-size: 1.5vw;
+}
 .present-show-div {
   text-align: center;
   margin: 4vw auto;
@@ -139,6 +142,7 @@ button:hover, .present-show-div .submit-button:hover {
   color: #608EAC;
   text-align: left;
   margin-left: 9vw;
+  height: 40%;
 }
 
 .present-info-div span {
@@ -220,7 +224,11 @@ form button {
   font-size: 2vw;
   margin-top: 4vw;
 }
-
+.cancel-button {
+  margin-left: -32vw;
+  margin-top: -1vw;
+  position: absolute;
+}
 .main-button {
   color: #8B7104;
   border: .1vw solid #963831;

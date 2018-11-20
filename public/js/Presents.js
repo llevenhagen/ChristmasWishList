@@ -9,6 +9,7 @@ class Presents extends React.Component {
     this.handleCreate = this.handleCreate.bind(this)
     this.handleCreateSubmit = this.handleCreateSubmit.bind(this)
     this.handleUpdateSubmit = this.handleUpdateSubmit.bind(this)
+    this.mainPage = this.mainPage.bind(this)
     this.state = {
       presentListIsVisible: true,
       addPresentIsVisible: false,
@@ -49,11 +50,22 @@ class Presents extends React.Component {
     this.setState({present: present})
 
   }
-  toggleState(st1, st2){
+  mainPage(){
+    console.log('hey there');
+    this.setState({
+        presentListIsVisible: true,
+        addPresentIsVisible: false,
+        presentIsVisible: false,
+        editPresentIsVisible: false
+
+    })
+  }
+  toggleState(st1, st2, st3){
     this.setState(
       {
         [st1]: !this.state[st1],
-        [st2]: !this.state[st2]
+        [st2]: !this.state[st2],
+        [st3]: !this.state[st3]
       }
     )
   }
@@ -111,6 +123,8 @@ class Presents extends React.Component {
         {
           this.state.addPresentIsVisible ?
           <PresentForm
+          mainPage={this.mainPage}
+          addPresentForm='addPresentIsVisible'
           toggleState={this.toggleState}
           handleCreate={this.handleCreate}
           handleSubmit={this.handleCreateSubmit}/>
@@ -119,6 +133,8 @@ class Presents extends React.Component {
         {
           this.state.presentIsVisible ?
           <Present
+            mainPage={this.mainPage}
+            editPresentForm='editPresentIsVisible'
             toggleState={this.toggleState}
             present={this.state.present}
             handleSubmit={this.handleUpdateSubmit}/>

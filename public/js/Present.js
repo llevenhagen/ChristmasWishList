@@ -1,17 +1,25 @@
 class Present extends React.Component {
   constructor(props){
     super(props)
-    this.toggleState= this.toggleState.bind(this)
+    this.toggleEditPage= this.toggleEditPage.bind(this)
     this.state ={
       editPresentIsVisible: false
     }
   }
-  toggleState(st1){
+  // toggleState(st1, st2, st3){
+  //   this.setState(
+  //     {
+  //       [st1]: !this.state[st1],
+  //     }
+  //   )
+  // }
+  toggleEditPage(st1, st2, st3 ){
     this.setState(
       {
-        [st1]: !this.state[st1]
+        [st1]: !this.state[st1],
       }
     )
+    this.props.toggleState(st2, st3)
   }
   render(){
     return (
@@ -23,16 +31,18 @@ class Present extends React.Component {
             <h4><span>Name:</span>
             {this.props.present.name}</h4>
             <h4><span>Price:</span>
-            {this.props.present.price}</h4>
+            ${this.props.present.price}</h4>
             <h4><span>Bought Status:</span>
             {
-             this.props.present.bought_status /*}== true ? "Someone already bought it!" : "Still on the list!"*/
+             this.props.present.bought_status == 't' ? "Someone already bought it!" : "Still on the list!"
             }</h4>
           </div>
-          <button onClick={()=> this.toggleState('editPresentIsVisible')}>Edit</button>
+          <button className="edit-button" onClick={()=> this.toggleEditPage('editPresentIsVisible')}>Edit</button>
           {
             this.state.editPresentIsVisible ?
-          <PresentForm present={this.props.present}
+          <PresentForm toggleState={this.toggleEditPage}
+          mainPage={this.props.mainPage}
+           present={this.props.present}
           handleSubmit={this.props.handleSubmit}/> : ''
         }
       </div>
