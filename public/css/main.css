@@ -85,8 +85,8 @@ h1 {
   width: 24%;
   height: 19vw;
   border-radius: .5vw;
-  box-shadow: 0px 0px 29px 5px rgba(100, 117, 93, 0.78);
-  box-shadow: inset 0px 0px 11px 2px rgba(100, 117, 93, 0.56);
+  box-shadow: 0px 0px 29px 5px rgb(96, 142, 172, .78);
+  box-shadow: inset 0px 0px 11px 2px rgb(96, 142, 172, 0.56);
 }
 
 .present-img>img {
@@ -124,12 +124,13 @@ button:hover, .present-show-div .submit-button:hover {
   width: 40vw;
   height: 40vw;
   border-radius: .5vw;
-  box-shadow: 0px 0px 29px 5px rgba(100, 117, 93, 0.78);
-  box-shadow: inset 0px 0px 11px 2px rgba(100, 117, 93, 0.56);
+  box-shadow: 0px 0px 29px 5px rgb(96, 142, 172, .78);
+  box-shadow: inset 0px 0px 11px 2px rgb(96, 142, 172, 0.56);
 }
 
 .present-image-div img {
   width: 25vw;
+  max-height: 50vw;
   border: .7vw solid rgb(150, 56, 49, .8);
   border-radius: .5vw;
   margin-top: 2vw;
