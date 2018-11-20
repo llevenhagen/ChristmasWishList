@@ -148,16 +148,29 @@ button:hover {
   margin-top: 2vw;
 }
 
+.name {
+  font-family: 'Fredericka the Great', cursive;
+  margin-left: -8vw;
+  font-size: 2vw;
+  color: #596C78;
+  text-align: center;
+  border-bottom: .1vw solid lightgrey;
+  font-weight: 700;
+
+}
+
 .present-info-div {
   font-family: 'El Messiri', sans-serif;
-  font-size: 2vw;
+  font-size: 1.8vw;
   font-weight: 700;
   color: #608EAC;
   text-align: left;
   margin-left: 9vw;
   height: 40%;
 }
-
+.present-info-div h4 {
+  font-size: 2vw;
+}
 .present-info-div span {
   font-family: 'Fredericka the Great', cursive;
   margin-right: 2vw;
@@ -349,6 +362,15 @@ margin-top: -15vw;
 font-size: 7vw;
 border-radius: .5vw;
 }
+.name {
+  padding-bottom: 2vw;
+  font-size: 8vw;
+  margin-bottom: 4vw;
+
+}
+.present-info-div h4 {
+  font-size: 6vw;
+}
 }
 @media
 only screen and (max-width: 760px),
@@ -384,7 +406,7 @@ only screen and (max-width: 760px),
   }
   .present-show-div {
     width: 90%;
-    height: 125vw;
+    height: 120vw;
     background: #F1F7FB;
   }
   .present-image-div {
@@ -449,6 +471,15 @@ only screen and (max-width: 760px),
     font-size: 5vw;
     background: white;
     width: 30vw;
+  }
+  .name {
+    padding-bottom: 2vw;
+    font-size: 5vw;
+    margin-bottom: 4vw;
+
+  }
+  .present-info-div h4 {
+    font-size: 4vw;
   }
   }
 /* font-family: 'Lobster', cursive;

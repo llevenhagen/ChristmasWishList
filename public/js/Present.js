@@ -28,7 +28,7 @@ class Present extends React.Component {
           <img src={this.props.present.image} alt={this.props.present.name}/>
           </div>
           <div className="present-info-div">
-            <h4><span>Name:</span>
+            <h4 className="name">
             {this.props.present.name}</h4>
             <h4><span>Price:</span>
             ${this.props.present.price}</h4>
